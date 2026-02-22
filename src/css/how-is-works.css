@@ -1,4 +1,10 @@
+.hiw-section {
+    display: flex;
+    justify-content: center;
+ 
+}
 .hiw-container {
+   
     max-width: 1280px;
 }
 .hiw-main-box {
@@ -41,13 +47,15 @@ margin:0px;
 font-size: 16px;
 line-height: 125%;
 color: white;
-margin:0px
+margin:0px;
+width:440px;
 }
 .hiw-list {
     display:flex;
     flex-direction: column;
     gap:24px;
-    padding:0;
+    padding:0px;
+    margin:0px;
 }
 .hiw-list-item {
 text-align: center;
@@ -62,4 +70,8 @@ width: 440px;
 height: 76px;
 background-color: white;
 
+}
+.hiw-list-item span {
+    font-weight: 700;
+    color: black;
 }
