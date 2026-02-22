@@ -1,41 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenHarvest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GreenHarvest</title>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <body>
+    <load src="./partials/header.html" />
 
+    <main id="top">
+      <!-- Loads the specified .html file -->
+      <load src="./partials/hero.html" />
+      <load src="./partials/how-is-works.html" />
+      <load src="./partials/advertisement.html" />
+      <load src="./partials/vegetables.html" />
+      <load src="./partials/review.html" />
+      <load src="./partials/your-order.html" />
+    </main>
 
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+    <load src="./partials/footer.html" />
 
-<body>
-  <load src="./partials/header.html" />
+    <!-- */  ----- FOOTER EBRU ----- */ -->
 
-  <main id="top">
-    <!-- Loads the specified .html file -->
-    <load src="./partials/hero.html" />
-    <load src="./partials/how-is-works.html" />
-    <load src="./partials/advertisement.html" />
-    <load src="./partials/vegetables.html" />
-    <load src="./partials/review.html" />
-    <load src="./partials/your-order.html" />
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
 
-  </main>
+      <a href="/" class="footer-logo">
+    <svg class="logo-icon" width="16" height="16" aria-hidden="true">
+      <use href="./img/img/footer-icon.svg#icon-vector"></use>
+    </svg>
 
-  <load src="./partials/footer.html" />
+    <svg class="logo-text" width="146" height="12" aria-label="Green Harvest Logo">
+      <use href="./img/img/footer-icon.svg#icon-green-harvest"></use>
+    </svg>
+  </a>
 
- 
-</body>
+            <p class="footer-text">  Whether you're looking for a healthy snack or a thoughtful gift,
+          our fruit baskets are the perfect choice.</p>
+          </div>
+          <nav class="footer-nav">
+            <a href="#">How it works</a> 
+            <a href="#">Vegetables</a>
+            <a href="#">Reviews</a>
+          </nav>
 
+          <div class="footer-contact">
+            <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+            <address>
+              1678 S. Pioneer Road Salt Lake City UT 84104
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-policy">
+            <a href="#">Privacy Policy</a>
+            <span>/</span>
+            <a href="#">Cookie Settings</a>
+          </div>
+
+          <p class="footer-copy">© Green Harvest 2023</p>
+        </div>
+
+        
+
+        
+      </div>
+    </footer>
+ <!-- */  ----- FOOTER END ----- */ -->
+
+  </body>
 </html>
