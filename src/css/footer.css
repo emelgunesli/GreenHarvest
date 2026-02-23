@@ -1,15 +1,13 @@
 /*  ----- FOOTER EBRU ----- */
 
-.container{
-    text-decoration: none;
-    font-family: "Inter Tight" , sans-serif;
-    max-width: 320px;
-    width: 100%;
-    padding: 20px 20px;
-    
-    
+.footer-container{
+  font-family: "Inter Tight", sans-serif;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
-
 
 .footer{
     background-color: #7A3145;
@@ -18,38 +16,63 @@
    
 }
 
-.footer-nav{
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+
+.footer-nav ul{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 14px;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 32px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    
-   
+    font-size: 28px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+
+
 
 .footer-nav a{
     color: #FBFBFB;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .footer-text{
     font-size: 14px;
     line-height: 1.42;
     letter-spacing: 0;
+     max-width: 265px;
 }
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+
+}
+
 .footer-contact a,
 .footer-contact address{
     color: #FBFBFB;
     font-size: 14px;
     line-height: 1.42;
-    font-weight: bold;
-    margin-bottom: 80px;
-    margin-top: 14px;    
     font-style: normal;
-    
+    letter-spacing: 0;
+    font-weight: 700;
 }
 
 
@@ -64,11 +87,13 @@
 
 
 .footer-logo {
-    fill: #FBFBFB;
+  fill: #FBFBFB;
   display: flex;
   align-items: center;
   gap: 8px;
-  text-decoration: none;
+  line-height: 1;
+  width: 168px;
+  height: 16px;
 }
 
 .logo-icon {
@@ -76,11 +101,158 @@
 }
 
 .logo-text {
-  display: block;
+  transform: translateY(1px);
 }
 
-.footer-bottom{
-    opacity: 70%;
-    font-size: 14px;
-    line-height: 1.42;
+
+.footer-policy {
+  display: flex;
+  gap: 8px;
+ 
 }
+
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.42;
+  opacity: 0.7;
+}
+
+
+
+
+/* -------- FOOTER - MEDIA -----------*/
+
+@media screen and (min-width: 768px) {
+
+  .footer-container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding:  32px 32px;    
+    gap: 100px;      }   
+
+
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-brand {
+  max-width: 300px;
+}
+
+.footer-right {
+    gap: 32px;
+}
+
+  .footer-nav ul {
+    gap: 24px;
+  }
+
+ .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+ .footer-text{
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: 0;
+
+ }
+
+.footer-logo{
+    width: 216px;
+    height: 20px;
+}
+
+
+
+}
+
+
+/* -----------FOOTER - DESKTOP ----- */
+
+@media (min-width: 1280px){
+
+  .footer-container{
+    max-width: 1280px;
+  padding: 52px 32px;
+ gap: 124px;
+  }
+
+ .footer-top{
+   display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-right{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 120px;      
+    align-items: flex-start;
+  }
+
+  .footer-brand {
+    max-width: 265px;
+   
+    
+  
+  }
+
+  .footer-logo{
+    width: 216px;
+    height: 20px;
+    padding-bottom: 24px;
+    
+  }
+
+   .footer-nav {
+    justify-self: center;
+  }
+
+  .footer-nav ul {
+    gap: 24px;
+  }
+
+  .footer-nav a {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+  }
+
+  .footer-contact a,
+  .footer-contact address{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .footer-contact {
+    margin-top: 8px;
+    justify-self: end;
+    max-width: 216px;
+  }
+
+  .footer-bottom {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-text{
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0;
+    
+  }
+}
+
+/* -------- FOOTER - MEDIA - END -----------*/
