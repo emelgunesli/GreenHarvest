@@ -1,0 +1,200 @@
+/* ============================================
+   ADVERTISEMENT BANNER — Desktop First CSS
+   Base: 1280px desktop
+   ============================================ */
+
+/* ── Section Container ── */
+.adv-banner-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
+
+  height: 428px;
+  /* top: 1556px — positioned by parent layout */
+  padding: 100px;
+  gap: 10px;
+  background-color: #fbfbfb;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* ── Accessibility: visually hidden heading ── */
+.adv-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Banner Title ── */
+.adv-banner-title {
+  /* Box */
+  text-align: center;
+  width: 100%;
+
+  height: 228px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 16px;
+
+  /* Typography — 768-1280 / H1 / Font: Inter */
+  font-family: 'Inter', 'Inter Tight', sans-serif;
+  font-weight: 600; /* Semi-Bold */
+  font-style: normal;
+  font-size: 76px;
+  line-height: 76px;
+  letter-spacing: -0.015em; /* -1.5% */
+  text-transform: uppercase;
+  color: #1a1a1a;
+
+  /* Natural word-wrap — no forced breaks on desktop */
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+/* ── Highlighted Span: "DISCOUNT UP TO 40%!" ── */
+.adv-highlight {
+  display: inline;
+  position: relative;
+  top: -4px; /* spec: top -4px */
+
+  /* Background rectangle: 808x84px, radius 12px, color #576f35 */
+  background-color: #576f35;
+  color: #ffffff;
+
+  /*
+   * Vertical padding: (84px target height - 76px line-height) / 2 = 4px
+   * Horizontal padding: 16px to fill ~808px width
+   */
+  padding: 4px 16px;
+  border-radius: 12px;
+
+  /* Correct background on inline wrapping */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* ── Line-break helpers ── */
+/* DESKTOP: ALL <br> tags hidden — text flows naturally into 3 lines */
+.adv-br-1,
+.adv-br-2,
+.adv-br-3 {
+  display: none;
+}
+
+/* ============================================
+   TABLET — 768px
+   ============================================ */
+@media (max-width: 1279px) and (min-width: 768px) {
+  .adv-banner-container {
+    width: 100%;
+
+    height: auto;
+    min-height: 488px;
+    padding: 100px 32px;
+    gap: 10px;
+    background-color: #fbfbfb;
+  }
+
+  .adv-banner-title {
+    width: 100%;
+    height: auto;
+    left: 0;
+    margin: 0 auto;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.015em;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .adv-highlight {
+    font-size: 64px;
+    line-height: 64px;
+    padding: 4px 16px;
+    top: -4px;
+  }
+
+  .adv-br-1,
+  .adv-br-2,
+  .adv-br-3 {
+    display: none;
+  }
+}
+/* ============================================
+   MOBILE — 375px (responsive starts here)
+   ============================================ */
+@media (max-width: 767px) and (min-width: 375px) {
+  .adv-banner-container {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    gap: 8px;
+  }
+
+  .adv-banner-title {
+    width: 100%;
+    height: auto;
+    left: 0;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+  }
+
+  .adv-highlight {
+    font-size: 36px;
+    line-height: 40px;
+    padding: 2px 10px;
+    border-radius: 8px;
+    top: -2px;
+  }
+
+  .adv-br-1,
+  .adv-br-2,
+  .adv-br-3 {
+    display: none;
+  }
+}
+
+/* ============================================
+   MOBILE — 320px (fluid / elastic layout)
+   ============================================ */
+@media (max-width: 374px) and (min-width: 320px) {
+  .adv-banner-container {
+    width: 100%;
+    height: auto;
+    padding: 32px 16px;
+    gap: 6px;
+  }
+
+  .adv-banner-title {
+    width: 100%;
+    height: auto;
+    left: 0;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+  }
+
+  .adv-highlight {
+    font-size: 28px;
+    line-height: 32px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    top: -2px;
+  }
+
+  .adv-br-1,
+  .adv-br-2,
+  .adv-br-3 {
+    display: none;
+  }
+}
