@@ -1,0 +1,93 @@
+/* =========================================
+   4. BÖLÜM: REVIEWS (MÜŞTERİ YORUMLARI)
+   ========================================= */
+
+.reviews-section {
+    background-color: var(--color-white);
+    padding: 100px 100px;
+    color: var(--color-text-dark);
+}
+
+/* BAŞLIK VE METİN ALANI */
+.reviews-section-main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.reviews-section-title2 {
+    color: #576f35;
+}
+
+.reviews-section-title {
+    display: block;
+}
+
+.reviews-section-main-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+
+    max-width: 500px;
+    margin-bottom: 60px;
+}
+
+/* YORUM KARTLARI LİSTESİ (GRID) */
+.reviews-avatar-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    border: 1px solid var(--blush);
+    border-radius: 24px;
+}
+
+/* TEKİL KART TASARIMI */
+.reviews-avatar-list-item {
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #eee;
+    width: 348px;
+
+}
+
+/* Avatar Resmi */
+.reviews-section-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+
+    object-fit: cover;
+    margin-bottom: 20px;
+    background-color: #ccc;
+}
+
+/* İsim */
+.reviews-avatar-list-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: var(--color-text-dark);
+}
+
+/* Yorum Metni */
+.reviews-avatar-list {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+    width: 304px;
+
+}
+
+
+
+
+
