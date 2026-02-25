@@ -1,0 +1,50 @@
+/* ── TABLET vegetables (768px – 1279px) ── */
+@media (max-width: 1279px) {
+  .vegetables {
+    padding: 100px 32px;
+  }
+  .vegetables__container {
+    max-width: 704px;
+  }
+  .vegetables__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .vegetables__title {
+    font-size: 64px;
+  }
+}
+
+/* ── TABLET adv-banner (768px – 1279px) ── */
+@media (max-width: 1279px) and (min-width: 768px) {
+  .adv-banner-container {
+    width: 100%;
+    height: auto;
+    min-height: 488px;
+    padding: 100px 32px;
+    gap: 10px;
+    background-color: #fbfbfb;
+  }
+  .adv-banner-title {
+    width: 100%;
+    height: auto;
+    left: 0;
+    margin: 0 auto;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.015em;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .adv-highlight {
+    font-size: 64px;
+    line-height: 64px;
+    padding: 4px 16px;
+    top: -4px;
+  }
+  .adv-br-1,
+  .adv-br-2,
+  .adv-br-3 {
+    display: none;
+  }
+}
