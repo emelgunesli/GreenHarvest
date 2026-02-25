@@ -137,7 +137,7 @@
    ========================================================= */
 
 .footer-bottom {
-  padding-top: 124px;
+ margin-top: 124px;
   display: flex;
   justify-content: space-between;
   align-items: center;
