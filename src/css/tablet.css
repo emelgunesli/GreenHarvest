@@ -1,0 +1,39 @@
+/*your-order-recep-tablet-css*/
+@media screen and (max-width: 1279px) {
+  .order-content {
+    min-width: 768px;
+  }
+  .order-content-text-box {
+    padding: 0;
+  }
+  .order-content-box {
+    flex-direction: column;
+    max-width: 640px;
+    width: 100%;
+  }
+  .order-content-card {
+    padding: 72px 100px;
+  }
+  .order-content-social-media-wrapper,
+  .order-content-card {
+    max-width: 640px;
+    width: 100%;
+  }
+
+  .order-content-social-media-wrapper {
+    padding: 52px;
+  }
+  .order-content-card-image {
+    max-width: 536px;
+    margin-bottom: 52px;
+  }
+  .order-form-button button:hover,
+  .order-form-button button:focus {
+    background-color: #732036;
+    color: #fbfbfb;
+  }
+  .order-form-button button:active {
+    color: #7a3345;
+    background-color: #fbfbfb;
+  }
+}
