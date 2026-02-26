@@ -16,7 +16,7 @@
         margin-bottom: 40px;
     }
 
-    /* Grid tek kolona düşsün */
+    
     .reviews-avatar-list {
         grid-template-columns: 1fr;
         gap: 16px;
