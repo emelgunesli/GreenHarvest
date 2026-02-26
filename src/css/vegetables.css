@@ -1,0 +1,153 @@
+/* desktop first vegetables*/
+
+:root {
+  --chianti: #7a3145;
+  --light: #fbfbfb;
+  --light-muted: #d4bfc4;
+  --card-bg: #f3f3f3;
+  --text-dark: #141414;
+  --radius: 40px;
+}
+
+/* 1280 */
+.vegetables {
+  background: var(--chianti);
+  padding: 100px 32px;
+  box-sizing: border-box;
+}
+
+.vegetables__container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+  box-sizing: border-box;
+}
+
+.vegetables__header {
+  margin-bottom: 48px;
+}
+
+.vegetables__title {
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.vegetables__title-organic {
+  color: var(--light);
+}
+
+.vegetables__title-vegetables {
+  color: var(--light-muted);
+}
+
+.vegetables__description {
+  color: var(--light);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 560px;
+  margin: 0;
+}
+
+/* 3 kolonlu grid — Desktop */
+.vegetables__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vegetable-card {
+  background: #fff; /*normalde bg #fbfbfb olamali ama renk gecisi veriyor o yuzden #fff girdim. */
+  border-radius: var(--radius);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  min-height: 379px;
+  box-sizing: border-box;
+}
+
+.vegetable-card__name {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--chianti);
+  margin: 0 0 8px;
+}
+
+.vegetable-card__price {
+  font-size: 14px;
+  color: var(--text-dark);
+  margin: 0 0 16px;
+}
+
+.vegetable-card__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  flex: 1;
+  display: block;
+}
+
+/* ── TABLET (768px – 1279px) ──────────────────────── */
+@media (max-width: 1279px) {
+  .vegetables {
+    padding: 100px 32px;
+  }
+
+  .vegetables__container {
+    max-width: 704px;
+  }
+
+  .vegetables__cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolon */
+  }
+
+  .vegetables__title {
+    font-size: 64px;
+  }
+}
+
+/* ── MOBİL (max 767px) ────────── */
+@media (max-width: 767px) {
+  .vegetables {
+    padding: 80px 20px;
+  }
+
+  .vegetables__container {
+    max-width: 100%;
+  }
+
+  .vegetables__cards {
+    grid-template-columns: 1fr; /* 1 kolon */
+  }
+
+  .vegetables__title {
+    font-size: 48px;
+  }
+
+  .vegetable-card {
+    min-height: 376px;
+    padding: 32px 24px 24px;
+  }
+}
+
+/* ── Çok küçük ekranlar (320px – 374px)  gerekyok onlem amacli // silinebilir */
+@media (max-width: 374px) {
+  .vegetables {
+    padding: 60px 16px;
+  }
+
+  .vegetables__title {
+    font-size: 38px;
+  }
+
+  .vegetable-card {
+    min-height: auto;
+    padding: 24px 16px 20px;
+  }
+}
