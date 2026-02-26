@@ -1,3 +1,42 @@
+
+
+@media (max-width: 768px) {
+
+    .reviews-section {
+        padding: 60px 20px;
+    }
+
+    .reviews-section-main-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .reviews-section-main-text {
+        font-size: 0.95rem;
+        margin-bottom: 40px;
+    }
+
+    /* Grid tek kolona düşsün */
+    .reviews-avatar-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .reviews-avatar-list-item {
+        width: 100%;
+        padding: 25px 18px;
+    }
+
+    .reviews-avatar-list-name {
+        font-size: 1rem;
+    }
+
+    .reviews-avatar-list-text {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+
 /*your-order-recep-mobile-css*/
 @media screen and (max-width: 767px) {
   .order-content {
@@ -59,3 +98,4 @@
     font-size: clamp(4px, 10vw, 18px);
   }
 }
+ main
