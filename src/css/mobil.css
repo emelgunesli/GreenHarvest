@@ -1,6 +1,4 @@
-/* ============================= */
-/* TELEFON -review (768px ve altı) */
-/* ============================= */
+
 @media (max-width: 768px) {
 
     .reviews-section {
@@ -17,7 +15,7 @@
         margin-bottom: 40px;
     }
 
-    /* Grid tek kolona düşsün */
+    
     .reviews-avatar-list {
         grid-template-columns: 1fr;
         gap: 16px;
