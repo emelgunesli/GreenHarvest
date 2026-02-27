@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 
 @media (max-width: 768px) {
@@ -99,8 +99,7 @@
     font-size: clamp(4px, 10vw, 18px);
   }
 }
- main
-=======
+
 @media (min-width: 375px) and (max-width: 767px){
 .burger-button {
         display: flex;
@@ -331,4 +330,4 @@
 
 
 
->>>>>>> 2706d72 (header-hero)
+ 
