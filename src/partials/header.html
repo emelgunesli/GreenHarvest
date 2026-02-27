@@ -1,24 +1,44 @@
 <header class="header">
   <div class="header-container">
 
-    <!--LOGO-->
-    <a class="logo-text" href="#top">
-      <svg class="header-logo-img" aria-label="Green Harvest Logo">
-        <use href="./img/symbol-defs.svg#icon-logo"></use>
-      </svg>
+    <!-- Logo ve Yan Icon -->
+    <div class="header-brand">
 
-      <span>GREEN.HARVEST</span>
-    </a>
+   <!-- Yan Icon -->
+       <a href="/" class="header-logo">
+          <svg class="logo-head-icon" aria-hidden="true">
+            <use href="./img/img/footer-icon.svg#icon-vector"></use>
+          </svg>
 
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
+          <svg class="logo-head-text" aria-label="Green Harvest Logo">
+            <use href="./img/img/footer-icon.svg#icon-green-harvest"></use>
+          </svg>
+        </a>
 
-    <label for="menu-toggle" class="burger-button" aria-label="Open menu">
-      <svg width="27" height="20" class="burger-icon" aria-hidden="true">
-        <use href="./img/symbol-defs.svg#icon-burger"></use>
-      </svg>
-    </label>
+   
+    </div>
 
+  
+        <!-- BURGER TOGGLE -->
+        <input type="checkbox" id="burger-toggle" class="burger-toggle" />
 
+        <!-- BURGER BUTTON -->
+        <label for="burger-toggle" class="menu-button">
+          <svg width="24" height="24">
+            <use href="/src/img/img/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </label>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu">
+          <!-- CLOSE BUTTON -->
+          <label for="burger-toggle" class="mobil-close-btn">
+            <svg width="8" height="8">
+              <use href="/src/img/img/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </label>
+
+    <!-- Desktop Navigation -->
     <nav class="desktop-nav" aria-label="Main navigation">
       <ul class="nav-bar-list">
         <li class="nav-bar-element"><a href="#how-it-works">How It Works</a></li>
@@ -28,13 +48,6 @@
       <button class="nav-bar-button" type="button">Shop now</button>
     </nav>
 
-    <div class="mobile-menu">
-      <div class="mobile-menu-inner">
-        <label for="menu-toggle" class="mobile-menu-close">
-          <svg class="close-icon" width="24" height="24">
-            <use href="./img/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </label>
 
         <nav class="mobile-nav">
           <ul class="mobile-menu-list">
@@ -48,4 +61,5 @@
       </div>
     </div>
 
+  </div>
 </header>
