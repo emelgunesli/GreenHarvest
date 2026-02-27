@@ -1,17 +1,27 @@
+<<<<<<< HEAD
 /* HEADER */
 .header {
   position: fixed; 
+=======
+.header {
+  position: absolute;
+>>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
   top: 0;
   left: 0;
   width: 100%;
   padding: 20px 40px;
   z-index: 100;
+<<<<<<< HEAD
   background-color: #576F35;
   display: flex;
   justify-content: center; 
 }
 
 /* Header Container */
+=======
+}
+
+>>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
 .header-container {
   width: 100%;
   max-width: 1280px;
@@ -21,6 +31,7 @@
   padding: 0 20px;
 }
 
+<<<<<<< HEAD
 /* Logo + Icon Block */
 .header-brand {
   max-width: 265px;
@@ -47,10 +58,36 @@
 
 
 .logo-head-text {
+=======
+/* Logo */
+.logo-text {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+
+/* Logo Icon */
+.header-logo-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+  fill: currentColor;
+}
+
+.logo-text span {
+>>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
   font-family: sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1;
+<<<<<<< HEAD
 }
 
 /* Yan Icon */
@@ -67,6 +104,15 @@
 }
 
 /* DESKTOP NAV */
+=======
+  display: inline-block;
+}
+.logo-text2{
+  padding-right: 336px;
+}
+
+/* Desktop Nav */
+>>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
 .desktop-nav {
   display: flex;
   align-items: center;
@@ -79,7 +125,11 @@
   margin: 0;
   padding: 0;
   display: flex;
+<<<<<<< HEAD
   gap: 20px;
+=======
+  gap: 8px;
+>>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
 }
 
 /* Nav Linkleri */
@@ -87,6 +137,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   padding: 12px 20px;
   color: #FBFBFB;
   font-size: 0.95rem;
@@ -95,8 +146,36 @@
   border-radius: 12px;
   text-decoration: none;
   transition: background 0.3s;
+=======
+  height: 44px;
+  
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.3s;
+  text-decoration: none;
 }
-
+.nav-bar-element-hiw{
+  width: 118px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  color: var(--color-white);
+}
+.nav-bar-element-veg{
+  width: 104px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  color: var(--color-white);
+}
+.nav-bar-element-rev{
+  width: 83px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  color: var(--color-white);
+>>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
+}
 .nav-bar-element a:hover {
   background: rgba(255, 255, 255, 0.15);
 }
@@ -106,13 +185,16 @@
   background-color: #7A3145;
   color: #FBFBFB;
   border: none;
-  padding: 12px 30px;
+  padding: 16px 32px;
   border-radius: 30px;
   font-weight: 600;
   font-size: 0.9rem;
   text-transform: uppercase;
   cursor: pointer;
+  width: 157px;
+  height: 52px;
 }
+<<<<<<< HEAD
 
 /* MOBILE ELEMENTLER */
 /* .menu-toggle,
@@ -151,3 +233,10 @@
     height: 28px;
   }
 }
+=======
+.menu-toggle,
+.burger-button,
+.mobile-menu {
+  display: none;
+}
+>>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
