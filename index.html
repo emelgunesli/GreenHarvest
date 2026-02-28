@@ -1,31 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GreenHarvest</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
-    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenHarvest</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" />
 
-    <link rel="stylesheet" crossorigin href="/GreenHarvest/assets/index-BAfM8hSe.css">
-  </head>
 
-  <body>
-    <header class="header">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+
+  <script type="module" crossorigin src="/GreenHarvest/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/GreenHarvest/assets/index-X6IoWqng.css">
+</head>
+
+<body>
+  <header class="header">
   <div class="header-container">
+
+    <!-- Logo ve Yan Icon -->
+    <div class="header-brand">
+
+   <!-- Yan Icon -->
+       <a href="/" class="header-logo">
+          <svg class="logo-head-icon" aria-hidden="true">
+            <use href="/GreenHarvest/assets/footer-icon-BaWN-cFC.svg#icon-vector"></use>
+          </svg>
 
     <!--LOGO-->
     <a class="logo-text" href="#top">
@@ -36,7 +42,15 @@
       <span class="logo-text2">GREEN.HARVEST</span>
     </a>
 
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
+
+          <svg class="logo-head-text" aria-label="Green Harvest Logo">
+            <use href="/GreenHarvest/assets/footer-icon-BaWN-cFC.svg#icon-green-harvest"></use>
+          </svg>
+        </a>
+
+
+   
+    </div>
 
     <label for="menu-toggle" class="burger-button" aria-label="Open menu">
       <svg width="27" height="20" class="burger-icon" aria-hidden="true">
@@ -45,6 +59,27 @@
     </label>
 
 
+  
+        <!-- BURGER TOGGLE -->
+        <input type="checkbox" id="burger-toggle" class="burger-toggle" />
+
+        <!-- BURGER BUTTON -->
+        <label for="burger-toggle" class="menu-button">
+          <svg width="24" height="24">
+            <use href="/src/img/img/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </label>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu">
+          <!-- CLOSE BUTTON -->
+          <label for="burger-toggle" class="mobil-close-btn">
+            <svg width="8" height="8">
+              <use href="/src/img/img/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </label>
+
+    <!-- Desktop Navigation -->
     <nav class="desktop-nav" aria-label="Main navigation">
       <ul class="nav-bar-list">
         <li class="nav-bar-element-hiw"><a href="#how-it-works">How It Works</a></li>
@@ -54,6 +89,8 @@
       <button class="nav-bar-button" type="button">Shop now</button>
     </nav>
 
+
+
     <div class="mobile-menu">
       <div class="mobile-menu-inner">
         <label for="menu-toggle" class="mobile-menu-close">
@@ -61,6 +98,7 @@
             <use href="/GreenHarvest/assets/symbol-defs-BDtaokCZ.svg#icon-close"></use>
           </svg>
         </label>
+
 
         <nav class="mobile-nav">
           <ul class="mobile-menu-list">
@@ -74,11 +112,12 @@
       </div>
     </div>
 
+  </div>
 </header>
 
-    <main id="top">
-      <!-- Loads the specified .html file -->
-      <section class="hero" id="hero">
+  <main id="top">
+    <!-- Loads the specified .html file -->
+    <section class="hero" id="hero">
   <div class="hero-container">
     <div class="hero-text-title">
 
@@ -103,7 +142,7 @@
   </div>
 </section>
 
-       <section class="hiw-section" id="how-it-works">
+     <section class="hiw-section" id="how-it-works">
     <h1 class="visually-hidden">How it works</h1>
   <div class="hiw-container">
    <div class="hiw-main-box">
@@ -145,7 +184,7 @@
   </div>
 </section>
 
-      <section class="adv-banner-container">
+    <section class="adv-banner-container">
   <h2 class="adv-sr-only">Discount Campaign</h2>
 
   <h1 class="adv-banner-title">
@@ -155,7 +194,7 @@
     KEEP YOUR HEALTH
   </h1>
 </section>
-      <section class="vegetables" id="vegetables">
+    <section class="vegetables" id="vegetables">
   <div class="vegetables__container">
     <header class="vegetables__header">
       <h2 class="vegetables__title">
@@ -239,9 +278,9 @@
   </div>
 </section>
 
-      <section class="reviews-section" id="reviews">
+    <section class="reviews-section" id="reviews">
     <div class="reviews-container">
-
+    <div class= "reviews-content-box">
         <h2 class="reviews-title">
             Reviews from <span class="accent">our customers</span>
         </h2>
@@ -282,10 +321,10 @@
                 </p>
             </li>
         </ul>
-
+    </div>
     </div>
 </section>
-      <!--your-order-recep-html-->
+    <!--your-order-recep-html-->
 <section class="your-order">
   <div class="container order-content">
     <div class="order-content-text-box">
@@ -396,9 +435,10 @@
   </div>
 </section>
 
-    </main>
 
-        <!-- */  ----- FOOTER EBRU ----- */ -->
+  </main>
+
+      <!-- */  ----- FOOTER EBRU ----- */ -->
 
  <footer class="footer">
   <div class="container footer-container">
@@ -423,9 +463,9 @@
 <div class="footer-right">
       <nav class="footer-nav">
         <ul>
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">Vegetables</a></li>
-          <li><a href="#">Reviews</a></li>
+          <li><a href="#how-it-works">How It Works</a>></li>
+          <li><a href="#vegetables">Vegetables</a></li>
+          <li><a href="#reviews">Reviews</a></li>
         </ul>
       </nav>
 
@@ -453,8 +493,6 @@
 </footer>
  <!-- */  ----- FOOTER END ----- */ -->
 
+</body>
 
-
-  </body>
 </html>
-

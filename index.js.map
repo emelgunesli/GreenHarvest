@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sources":["../src/main.js"],"sourcesContent":["import \"./css/styles.css\";\n\n// If you have JS logic later, write it here.\nconsole.log(\"GreenHarvest main.js loaded\");"],"names":[],"mappings":"ssBAGA,QAAQ,IAAI,6BAA6B"}
