@@ -142,7 +142,7 @@
 
 /* ================= TABLET ================= */
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .footer-container {
     max-width: 768px;
     margin: 0 auto;
@@ -183,7 +183,6 @@
   .footer-container {
     padding: 40px 20px;
     max-width: 375px;
-    width: 100%;
   }
 
   .footer-top {
