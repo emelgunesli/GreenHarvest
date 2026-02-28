@@ -110,7 +110,6 @@
   padding: 0;
   display: flex;
   gap: 20px;
-  gap: 8px;
 }
 
 /* Nav Linkleri */
@@ -154,6 +153,7 @@
   border-radius: 12px;
   color: var(--color-white);
 }
+
 .nav-bar-element a:hover {
   background: rgba(255, 255, 255, 0.15);
 }
@@ -163,22 +163,20 @@
   background-color: #7a3145;
   color: #fbfbfb;
   border: none;
-  padding: 16px 32px;
+  padding: 12px 30px;
   border-radius: 30px;
   font-weight: 600;
   font-size: 0.9rem;
   text-transform: uppercase;
   cursor: pointer;
-  width: 157px;
-  height: 52px;
 }
 
 /* MOBILE ELEMENTLER */
-/* .menu-toggle,
+.menu-toggle,
 .burger-button,
 .mobile-menu {
   display: none;
-} */
+}
 
 /* Responsive */
 @media (max-width: 1279px) {
@@ -209,9 +207,4 @@
     width: 28px;
     height: 28px;
   }
-}
-.menu-toggle,
-.burger-button,
-.mobile-menu {
-  display: none;
 }
