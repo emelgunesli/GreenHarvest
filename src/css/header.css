@@ -31,7 +31,6 @@
   padding: 0 20px;
 }
 
-<<<<<<< HEAD
 /* Logo + Icon Block */
 .header-brand {
   max-width: 265px;
@@ -58,7 +57,6 @@
 
 
 .logo-head-text {
-=======
 /* Logo */
 .logo-text {
   display: flex;
@@ -82,12 +80,10 @@
 }
 
 .logo-text span {
->>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
   font-family: sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1;
-<<<<<<< HEAD
 }
 
 /* Yan Icon */
@@ -104,7 +100,6 @@
 }
 
 /* DESKTOP NAV */
-=======
   display: inline-block;
 }
 .logo-text2{
@@ -112,7 +107,6 @@
 }
 
 /* Desktop Nav */
->>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
 .desktop-nav {
   display: flex;
   align-items: center;
@@ -125,11 +119,8 @@
   margin: 0;
   padding: 0;
   display: flex;
-<<<<<<< HEAD
   gap: 20px;
-=======
   gap: 8px;
->>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
 }
 
 /* Nav Linkleri */
@@ -137,7 +128,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
   padding: 12px 20px;
   color: #FBFBFB;
   font-size: 0.95rem;
@@ -146,7 +136,6 @@
   border-radius: 12px;
   text-decoration: none;
   transition: background 0.3s;
-=======
   height: 44px;
   
   font-size: 0.95rem;
@@ -174,7 +163,6 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 12px;
   color: var(--color-white);
->>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
 }
 .nav-bar-element a:hover {
   background: rgba(255, 255, 255, 0.15);
@@ -194,7 +182,6 @@
   width: 157px;
   height: 52px;
 }
-<<<<<<< HEAD
 
 /* MOBILE ELEMENTLER */
 /* .menu-toggle,
@@ -233,10 +220,8 @@
     height: 28px;
   }
 }
-=======
 .menu-toggle,
 .burger-button,
 .mobile-menu {
   display: none;
 }
->>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
