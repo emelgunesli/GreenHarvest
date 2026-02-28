@@ -1,34 +1,39 @@
 
+@media (max-width: 1279px) {
 
-@media (max-width: 1024px) {
-
-    .reviews-section {
-        padding: 80px 40px;
+    .reviews-container {
+        min-width: 768px;
+        padding: 100px 32px;
     }
 
-    .reviews-section-main-title {
+    .reviews-title {
         font-size: 2.4rem;
         max-width: 100%;
     }
 
-    .reviews-section-main-text {
-        max-width: 100%;
+    .reviews-text {
+        max-width: 288px;
+        padding: 0 26px;
     }
 
     /* Grid 2 kolona düşsün */
-    .reviews-avatar-list {
-        grid-template-columns: repeat(2, 1fr);
+    .reviews-list {
+        display: flex;
+        overflow-x: auto;
         gap: 20px;
+        scroll-snap-type: x mandatory;
         border: none;
+        
     }
 
-    .reviews-avatar-list-item {
+    .review-card  {
+        flex: 0 0 calc((100% - 20px) / 2);
+        scroll-snap-align: start;
+    }
+
+    .reviews-list {
         width: 100%;
         padding: 30px 20px;
-    }
-
-    .reviews-avatar-list-text {
-        width: 100%;
     }
 }
 

@@ -2,13 +2,18 @@
 .reviews-section {
     padding: 100px 0;
     background-color: #fff;
+    margin: 0 auto;
 }
 
 /* CONTAINER */
 .reviews-container {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 100px;
+}
+.reviews-content-box {
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 /* TITLE */
@@ -60,6 +65,7 @@
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
+    margin: 0 auto;
 }
 
 /* NAME */

@@ -1,38 +1,43 @@
 
+@media (max-width: 767px) {
 
-
-@media (max-width: 768px) {
-
-    .reviews-section {
-        padding: 60px 20px;
+    .reviews-container {
+        min-width: 0;
+        padding: 80px 20px;
     }
 
-    .reviews-section-main-title {
+    .reviews-content-box {
+        max-width: 375px;
+        margin: 0 auto;
+    
+    }
+
+    .reviews-title {
         font-size: 2rem;
         line-height: 1.2;
     }
 
-    .reviews-section-main-text {
+    
+    .reviews-text {
         font-size: 0.95rem;
         margin-bottom: 40px;
     }
 
-    
-    .reviews-avatar-list {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .reviews-avatar-list-item {
-        width: 100%;
+    .review-card {
+        flex: 0 0 100%;
         padding: 25px 18px;
     }
 
-    .reviews-avatar-list-name {
-        font-size: 1rem;
+    .reviews-list {
+        width: 100%;
+        padding: 20px 16px;
     }
 
-    .reviews-avatar-list-text {
+    .review-name {
+        font-size: 1.125rem;
+    }
+
+    .reviews-description {
         width: 100%;
         font-size: 0.9rem;
     }
@@ -99,8 +104,6 @@
     font-size: clamp(4px, 10vw, 18px);
   }
 }
-<<<<<<< HEAD
-=======
 
 @media (min-width: 375px) and (max-width: 767px){
 .burger-button {
@@ -332,5 +335,3 @@
 
 
 
- 
->>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
