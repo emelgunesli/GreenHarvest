@@ -99,8 +99,6 @@
     font-size: clamp(4px, 10vw, 18px);
   }
 }
-<<<<<<< HEAD
-=======
 
 @media (min-width: 375px) and (max-width: 767px){
 .burger-button {
@@ -333,4 +331,3 @@
 
 
  
->>>>>>> 66705dcd1b626589700e6bea5c52a7741e886b9b
