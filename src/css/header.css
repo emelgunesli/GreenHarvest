@@ -1,229 +1,110 @@
 
 .header {
-  position: fixed; 
-.header {
   position: absolute;
-
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 40px;
+  padding: 30px 170px;
   z-index: 100;
-  background-color: #576F35;
-  display: flex;
-  justify-content: center; 
-}
-
-/* Header Container */
-
 }
 
 .header-container {
   width: 100%;
-  max-width: 1280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
 }
 
-/* Logo + Icon Block */
-.header-brand {
-  max-width: 265px;
-  position: relative;
-}
-
-.header-logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: 216px;
-  height: 20px;
-  fill: #FBFBFB;
- 
-}
-
-.logo-head-icon {
-  flex-shrink: 0;
-  width: 50px;
-  height: 20px;
- 
-}
-
-
-
-.logo-head-text {
-
-/* Logo */
 .logo-text {
-  display: flex;
-  align-items: center;
-  column-gap: 8px;
-  text-decoration: none;
-  color: var(--color-white);
   font-size: 1.4rem;
   font-weight: 800;
+  color: var(--color-white);
   letter-spacing: -0.5px;
   text-transform: uppercase;
 }
 
-/* Logo Icon */
-.header-logo-img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  display: block;
-  fill: currentColor;
-}
-
-.logo-text span {
-  font-family: sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1;
-}
-
-/* Yan Icon */
-.header-icon {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.header-icon .header-logo-img {
-  width: 32px;
-  height: 32px;
-  fill: currentColor;
-}
-
-/* DESKTOP NAV */
-  display: inline-block;
-}
-.logo-text2{
-  padding-right: 336px;
-}
-
-/* Desktop Nav */
 .desktop-nav {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-/* Nav Listesi */
 .nav-bar-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  gap: 20px;
-  gap: 8px;
+  gap: 25px;
 }
 
-/* Nav Linkleri */
 .nav-bar-element a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 12px 20px;
-  color: #FBFBFB;
-  font-size: 0.95rem;
-  font-weight: 500;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 12px;
-  text-decoration: none;
-  transition: background 0.3s;
-
-  height: 44px;
-  
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: background 0.3s;
-  text-decoration: none;
-}
-.nav-bar-element-hiw{
   width: 118px;
-  padding: 12px;
+  height: 44px;
+  color: var(--color-white);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 10px 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 12px;
-  color: var(--color-white);
+  transition: background 0.3s;
+  gap: 10px;
 }
-.nav-bar-element-veg{
-  width: 104px;
-  padding: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 12px;
-  color: var(--color-white);
-}
-.nav-bar-element-rev{
-  width: 83px;
-  padding: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 12px;
-  color: var(--color-white);
 
-}
 .nav-bar-element a:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* Nav Buton */
 .nav-bar-button {
-  background-color: #7A3145;
-  color: #FBFBFB;
+  background-color: var(--color-dark-btn);
+  color: var(--color-white);
   border: none;
-  padding: 16px 32px;
+  padding: 12px 30px;
   border-radius: 30px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.9rem;
   text-transform: uppercase;
   cursor: pointer;
-  width: 157px;
-  height: 52px;
 }
 
-/* MOBILE ELEMENTLER */
-/* .menu-toggle,
-.burger-button,
-.mobile-menu {
-  display: none;
-} */
-
-/* Responsive */
-@media (max-width: 1279px) {
-  .desktop-nav {
-    display: none;
-  }
-
-  .burger-button {
-    display: flex;
-  }
-}
-
-@media (max-width: 767px) {
-  .header-container {
-    padding: 0 16px;
-  }
-
-  .header-logo span {
-    font-size: 1rem;
-  }
-
-  .header-logo-img {
-    width: 28px;
-    height: 28px;
-  }
-
-  .header-icon .header-logo-img {
-    width: 28px;
-    height: 28px;
-  }
-}
 
 .menu-toggle,
 .burger-button,
 .mobile-menu {
-  display: none;
+  display: none !important;
 }
 
+/* Logo Link */
+.logo-text {
+  display: flex;
+
+  align-items: center;
+
+  column-gap: 8px;
+
+  text-decoration: none;
+
+  color: #fff;
+}
+
+/* Logo İkonu */
+.header-logo-img {
+  width: 20px;
+
+  height: 20px;
+  object-fit: contain;
+
+  display: block;
+
+  margin: 0;
+  fill: currentColor;
+}
+
+.logo-text span {
+  font-family: sans-serif;
+
+  font-weight: 700;
+
+  font-size: 18px;
+
+  line-height: 1;
+
+  display: inline-block;
+
+}
