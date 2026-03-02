@@ -1,88 +1,64 @@
-/* SECTION */
-.reviews-section {
-    padding: 100px 0;
-    background-color: #fff;
-    margin: 0 auto;
+/* Reviews */
+.reviews {
+  padding: 100px 0;
 }
 
-/* CONTAINER */
-.reviews-container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 100px;
-}
-.reviews-content-box {
-    max-width: 1080px;
-    margin: 0 auto;
+.reviews .section-head {
+  max-width: 553px;
 }
 
-/* TITLE */
-.reviews-title {
-    font-size: 3rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.1;
-    max-width: 600px;
-    margin-bottom: 20px;
+.reviews .section-head h2 span {
+  color: var(--green);
 }
 
-.accent {
-    color: #576f35;
+.review-grid {
+  margin: 52px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 344px);
+  gap: 24px;
 }
 
-/* DESCRIPTION */
-.reviews-text {
-    max-width: 500px;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
-    margin-bottom: 60px;
-}
-
-/* GRID */
-.reviews-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* CARD */
 .review-card {
-    background-color: #f8f8f8;
-    border-radius: 20px;
-    padding: 40px 30px;
-    text-align: center;
-    border: 1px solid #eee;
+  width: 344px;
+  min-height: 248px;
+  border-radius: 24px;
+  border: 1px solid var(--blush);
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* AVATAR */
-.review-avatar {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    margin: 0 auto;
+.review-card img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
 }
 
-/* NAME */
-.review-name {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+.review-card h3 {
+  margin: 24px 0 8px;
+  color: var(--black);
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.27px;
 }
 
-/* TEXT */
-.review-description {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #555;
+.review-card p {
+  margin: 0;
+  color: var(--gray);
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
 }
 
-
-
+.review-card:hover {
+  border-color: var(--chianti);
+  box-shadow: 0 8px 18px rgba(20, 20, 20, 0.08);
+}
 
